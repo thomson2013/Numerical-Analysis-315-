@@ -1,6 +1,24 @@
 # Numerical-Analysis-315-
 A nxn Wilkinson matrix of size 60
 
+     4c
+     
+     the following is the code used to create a wilkinson matrix of size nxn
+      
+     function W = wilkin(n)
+     %Computes a nxn Wilkinson matrix
+     A = zeros(n,n);
+     for i = 1:n
+    		A(i,n) = 1;
+    		A(i,i) = 1;
+    		for j = 1:n
+        		if i > j
+            		A(i,j) = -1;
+        		end
+    		end
+     end
+
+     
      4d1.
      
      Columns 1 through 21
@@ -192,7 +210,14 @@ Columns 22 through 42
 
      4d2.
      
-     The column vector e with all entries equal to 1:
+     The following code creates the column vector e with all entries equal to 1
+     
+     e = zeros(n,1);
+     for i = 1:n
+          e(i) = 1;
+     end
+
+     The column vector e with all entries equal to 1 is as follows:
      
      1
      1
@@ -253,4 +278,69 @@ Columns 22 through 42
      1
      1
      1
+     1
+
+     4D4.
+     
+     the column vector x as given by the code x = A\b
+      
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     1
+     0
+     0
+     0
+     0
+     0
+     0
      1
